@@ -1,0 +1,16 @@
+<%= form_for @monster do |f| %>
+
+<div class="form-inline">
+  <%= f.label :name %>
+  <%= f.text_field :name, class: 'form-control', placeholder: "Enter Name" %>
+  &emsp;&emsp;
+  
+  <%= f.label :mon_type, "Type" %>
+  <%= f.text_field :mon_type, class: 'form-control', placeholder: "Enter Type" %>
+</div><br /><br />
+
+<div class="form-group text-center">
+  <%= f.submit "Generate", class: 'btn bnt-success' %>
+</div>
+
+<% end %>
