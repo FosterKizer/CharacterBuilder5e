@@ -6,8 +6,19 @@
     
     <table class="table">
       <tr class="active">
-        <td><%= @monster.name %></td>
-        <td class="text-right"><%= @monster.mon_type %></td>
+        <td><strong><%= @monster.name %></strong></td>
+        <td class="text-right"><strong><%= @monster.mon_type %></strong></td>
+      </tr>
+      <tr class="active text-center">
+        <td colspan="2"><strong>Abilities (Focuses)</strong></td>
+      </tr>
+      <tr>
+        <td><%= @monster.communication %></td>
+        <% if @total == 0 %>
+          <td>Communication</td>
+        <% else %>
+          <td>Communication()</td>
+        <% end %>
       </tr>
     </table>
     

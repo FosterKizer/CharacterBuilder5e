@@ -1,13 +1,39 @@
 <%= form_for @monster do |f| %>
 
-<div class="form-inline">
-  <%= f.label :name %>
-  <%= f.text_field :name, class: 'form-control', placeholder: "Enter Name" %>
-  &emsp;&emsp;
+<table class="table">
+  <tr class="active">
+    <div class="form-inline">
+    <td><%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control', placeholder: "Enter Name" %></td>
   
-  <%= f.label :mon_type, "Type" %>
-  <%= f.text_field :mon_type, class: 'form-control', placeholder: "Enter Type" %>
-</div><br /><br />
+    <td><%= f.label :mon_type, "Type" %>
+      <%= f.text_field :mon_type, class: 'form-control', placeholder: "Enter Type" %></td>
+    </div>
+  </tr>
+
+  <tr>
+    <div class="form-inline">
+      <td><%= f.select :communication, @ability_options, include_blank: false, selected: "0" %>
+        <%= f.label :communication %></td>
+ 
+      <td>
+        <%= f.check_box :animal_handling %>&nbsp;<%= f.label :animal_handling, "Animal Handling" %><br />
+        <%= f.check_box :bargaining %>&nbsp;<%= f.label :bargaining, "Bargaining" %><br />
+        <%= f.check_box :deception %>&nbsp;<%= f.label :deception, "Deception" %><br />
+        <%= f.check_box :disguise %>&nbsp;<%= f.label :disguise, "Disguise" %><br />
+        <%= f.check_box :etiquette %>&nbsp;<%= f.label :etiquette, "Etiquette" %><br />
+        <%= f.check_box :gambling %>&nbsp;<%= f.label :gambling, "Gambling" %><br />
+        <%= f.check_box :investigation %>&nbsp;<%= f.label :investigation, "Investigation" %><br />
+        <%= f.check_box :leadership %>&nbsp;<%= f.label :leadership, "Leadership" %><br />
+        <%= f.check_box :performance %>&nbsp;<%= f.label :performance, "Performance" %><br />
+        <%= f.check_box :persuasion %>&nbsp;<%= f.label :persuasion, "Persuasion" %><br />
+        <%= f.check_box :seduction %>&nbsp;<%= f.label :seduction, "Seduction" %>
+      </td>
+    </div>
+  </tr>
+</table>
+
+<br /><br />
 
 <div class="form-group text-center">
   <%= f.submit "Generate", class: 'btn bnt-success' %>

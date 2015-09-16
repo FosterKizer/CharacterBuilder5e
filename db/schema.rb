@@ -11,13 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150818011007) do
+ActiveRecord::Schema.define(version: 20150915231101) do
 
   create_table "monsters", force: :cascade do |t|
     t.string   "name"
     t.string   "mon_type"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "communication"
+    t.boolean  "animal_handling"
+    t.boolean  "bargaining"
+    t.boolean  "deception"
+    t.boolean  "disguise"
+    t.boolean  "etiquette"
+    t.boolean  "gambling"
+    t.boolean  "investigation"
+    t.boolean  "leadership"
+    t.boolean  "performance"
+    t.boolean  "persuasion"
+    t.boolean  "seduction"
   end
 
   create_table "users", force: :cascade do |t|
