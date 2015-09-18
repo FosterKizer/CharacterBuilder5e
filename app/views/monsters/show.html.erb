@@ -14,10 +14,18 @@
       </tr>
       <tr>
         <td><%= @monster.communication %></td>
-        <% if @total == 0 %>
-          <td>Communication</td>
+        <% if @com_total == 0 %>
+          <td class="text-center">Communication</td>
         <% else %>
-          <td>Communication()</td>
+          <td class="text-center">Communication(<%= @com_true_list %>)</td>
+        <% end %>
+      </tr>
+      <tr>
+        <td><%= @monster.constitution %></td>
+        <% if @con_total == 0 %>
+          <td class="text-center">Constitution</td>
+        <% else %>
+          <td class="text-center">Constitution(<%= @con_true_list %>)</td>
         <% end %>
       </tr>
     </table>

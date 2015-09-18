@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150915231101) do
+ActiveRecord::Schema.define(version: 20150918022139) do
 
   create_table "monsters", force: :cascade do |t|
     t.string   "name"
@@ -30,6 +30,12 @@ ActiveRecord::Schema.define(version: 20150915231101) do
     t.boolean  "performance"
     t.boolean  "persuasion"
     t.boolean  "seduction"
+    t.string   "constitution"
+    t.boolean  "drinking"
+    t.boolean  "rowing"
+    t.boolean  "running"
+    t.boolean  "stamina"
+    t.boolean  "swimming"
   end
 
   create_table "users", force: :cascade do |t|

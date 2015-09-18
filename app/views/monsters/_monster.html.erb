@@ -31,6 +31,21 @@
       </td>
     </div>
   </tr>
+  
+  <tr>
+    <div class="form-inline">
+      <td><%= f.select :constitution, @ability_options, include_blank: false, selected: "0" %>
+        <%= f.label :constitution %></td>
+      
+      <td>
+        <%= f.check_box :drinking %>&nbsp;<%= f.label :drinking, "Drinking" %><br />
+        <%= f.check_box :rowing %>&nbsp;<%= f.label :rowing, "Rowing" %><br />
+        <%= f.check_box :running %>&nbsp;<%= f.label :running, "Running" %><br />
+        <%= f.check_box :stamina %>&nbsp;<%= f.label :stamina, "Stamina" %><br />
+        <%= f.check_box :swimming %>&nbsp;<%= f.label :swimming, "Swimming" %>
+      </td>
+    </div>
+  </tr>
 </table>
 
 <br /><br />
