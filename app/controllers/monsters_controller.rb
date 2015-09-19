@@ -6,6 +6,7 @@ class MonstersController < ApplicationController
     com_check
     con_check
     dex_check
+    fig_check
   end
   
   def new
