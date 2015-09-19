@@ -5,29 +5,61 @@
   <div class="col-md-4">
     
     <table class="table">
-      <tr class="active">
+      
+      <tr class="danger">
         <td><strong><%= @monster.name %></strong></td>
         <td class="text-right"><strong><%= @monster.mon_type %></strong></td>
       </tr>
-      <tr class="active text-center">
+      
+      <tr class="warning text-center">
         <td colspan="2"><strong>Abilities (Focuses)</strong></td>
       </tr>
+      
       <tr>
-        <td><%= @monster.communication %></td>
+        <td class="text-center"><%= @monster.accuracy %></td>
+        <% if @acc_total == 0 %>
+          <td class="text-center">Accuracy</td>
+        <% else %>
+          <td class="text-center">Accuracy(<%= @acc_true_list %>)</td>
+        <% end %>
+      </tr>
+      
+      <tr>
+        <td class="text-center"><%= @monster.communication %></td>
         <% if @com_total == 0 %>
           <td class="text-center">Communication</td>
         <% else %>
           <td class="text-center">Communication(<%= @com_true_list %>)</td>
         <% end %>
       </tr>
+      
       <tr>
-        <td><%= @monster.constitution %></td>
+        <td class="text-center"><%= @monster.constitution %></td>
         <% if @con_total == 0 %>
           <td class="text-center">Constitution</td>
         <% else %>
           <td class="text-center">Constitution(<%= @con_true_list %>)</td>
         <% end %>
       </tr>
+      
+      <tr>
+        <td class="text-center"><%= @monster.dexterity %></td>
+        <% if @dex_total == 0 %>
+          <td class="text-center">Dexterity</td>
+        <% else %>
+          <td class="text-center">Dexterity(<%= @dex_true_list %>)</td>
+        <% end %>
+      </tr>
+      
+      <tr>
+        <td class="text-center"<%= @monster.fighting %></td>
+        <% if @fig_total == 0 %>
+          <td class="text-center">Fighting</td>
+        <% else %>
+          <td class="text-center">Fighting(<%= @fig_true_list %>)</td>
+        <% end %>
+      </tr>
+      
     </table>
     
   </div>

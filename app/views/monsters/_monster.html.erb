@@ -1,13 +1,34 @@
 <%= form_for @monster do |f| %>
 
 <table class="table">
-  <tr class="active">
-    <div class="form-inline">
+  <tr class="danger text-center">
     <td><%= f.label :name %>
       <%= f.text_field :name, class: 'form-control', placeholder: "Enter Name" %></td>
   
     <td><%= f.label :mon_type, "Type" %>
       <%= f.text_field :mon_type, class: 'form-control', placeholder: "Enter Type" %></td>
+  </tr>
+  
+  <tr class="warning text-center">
+    <td><strong>Ability</strong></td>
+    <td><strong>Focuses</strong></td>
+  </tr>
+  
+  <tr>
+    <div class="form-inline">
+      <td><%= f.select :accuracy, @ability_options, include_blank: false, selected: "0" %>
+        <%= f.label :accuracy %></td>
+      
+      <td>
+        <%= f.check_box :arcane_blast %>&nbsp;<%= f.label :arcane_blast, "Arcane Blast" %><br />
+        <%= f.check_box :bows %>&nbsp;<%= f.label :bows, "Bows" %><br />
+        <%= f.check_box :black_powder %>&nbsp;<%= f.label :black_powder, "Black Powder" %><br />
+        <%= f.check_box :brawling %>&nbsp;<%= f.label :brawling, "Brawling" %><br />
+        <%= f.check_box :dueling %>&nbsp;<%= f.label :dueling, "Dueling" %><br />
+        <%= f.check_box :grenades %>&nbsp;<%= f.label :grenades, "Grenades" %><br />
+        <%= f.check_box :light_blades %>&nbsp;<%= f.label :light_blades, "Light Blades" %><br />
+        <%= f.check_box :staves %>&nbsp;<%= f.label :staves, "Staves" %>
+      </td>
     </div>
   </tr>
 
@@ -46,12 +67,50 @@
       </td>
     </div>
   </tr>
+  
+  <tr>
+    <div class="form-inline">
+      <td><%= f.select :dexterity, @ability_options, include_blank: false, selected: "0" %>
+        <%= f.label :dexterity %></td>
+      
+      <td>
+        <%= f.check_box :acrobatics %>&nbsp;<%= f.label :acrobatics, "Acrobatics" %><br />
+        <%= f.check_box :calligraphy %>&nbsp;<%= f.label :calligraphy, "Calligrphy" %><br />
+        <%= f.check_box :crafting %>&nbsp;<%= f.label :crafting, "Crafting" %><br />
+        <%= f.check_box :initiative %>&nbsp;<%= f.label :initiative, "Initiative" %><br />
+        <%= f.check_box :legerdemain %>&nbsp;<%= f.label :legerdemain, "Legerdemain" %><br />
+        <%= f.check_box :lock_picking %>&nbsp;<%= f.label :lock_picking, "Lock Picking" %><br />
+        <%= f.check_box :riding %>&nbsp;<%= f.label :riding, "Riding" %><br />
+        <%= f.check_box :piloting %>&nbsp;<%= f.label :piloting, "Piloting" %><br />
+        <%= f.check_box :sailing %>&nbsp;<%= f.label :sailing, "Sailing" %><br />
+        <%= f.check_box :stealth %>&nbsp;<%= f.label :stealth, "Stealth" %><br />
+        <%= f.check_box :traps %>&nbsp;<%= f.label :traps, "Traps" %>
+      </td>
+    </div>
+  </tr>
+  
+  <tr>
+    <div class="form-inline">
+      <td><%= f.select :fighting, @ability_options, include_blank: false, selected: "0" %>
+        <%= f.label :fighting %></td>
+      
+      <td>
+        <%= f.check_box :axes %>&nbsp;<%= f.label :axes, "Axes" %><br />
+        <%= f.check_box :bludgeons %>&nbsp;<%= f.label :bludgeons, "Bludgeons" %><br />
+        <%= f.check_box :heavy_blades %>&nbsp;<%= f.label :heavy_blades, "Heavy Blades" %><br />
+        <%= f.check_box :lances %>&nbsp;<%= f.label :lances, "Lances" %><br />
+        <%= f.check_box :polearms %>&nbsp;<%= f.label :polearms, "Polearms" %><br />
+        <%= f.check_box :spears %>&nbsp;<%= f.label :spears, "Spears" %>
+      </td>
+    </div>
+  </tr>
+  
 </table>
 
 <br /><br />
 
 <div class="form-group text-center">
-  <%= f.submit "Generate", class: 'btn bnt-success' %>
+  <%= f.submit "Generate", class: 'btn btn-success' %>
 </div>
 
 <% end %>

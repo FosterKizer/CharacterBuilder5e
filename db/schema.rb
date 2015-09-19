@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150918022139) do
+ActiveRecord::Schema.define(version: 20150919031632) do
 
   create_table "monsters", force: :cascade do |t|
     t.string   "name"
@@ -36,6 +36,34 @@ ActiveRecord::Schema.define(version: 20150918022139) do
     t.boolean  "running"
     t.boolean  "stamina"
     t.boolean  "swimming"
+    t.string   "accuracy"
+    t.boolean  "arcane_blast"
+    t.boolean  "bows"
+    t.boolean  "black_powder"
+    t.boolean  "brawling"
+    t.boolean  "dueling"
+    t.boolean  "grenades"
+    t.boolean  "light_blades"
+    t.boolean  "staves"
+    t.string   "dexterity"
+    t.boolean  "acrobatics"
+    t.boolean  "calligraphy"
+    t.boolean  "crafting"
+    t.boolean  "initiative"
+    t.boolean  "legerdemain"
+    t.boolean  "lock_picking"
+    t.boolean  "riding"
+    t.boolean  "piloting"
+    t.boolean  "sailing"
+    t.boolean  "stealth"
+    t.boolean  "traps"
+    t.string   "fighting"
+    t.boolean  "axes"
+    t.boolean  "bludgeons"
+    t.boolean  "heavy_blades"
+    t.boolean  "lances"
+    t.boolean  "polearms"
+    t.boolean  "spears"
   end
 
   create_table "users", force: :cascade do |t|
