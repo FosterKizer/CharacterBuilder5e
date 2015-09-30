@@ -105,6 +105,79 @@
     </div>
   </tr>
   
+  <tr>
+    <div class="form-inline">
+      <td><%= f.select :intelligence, @ability_options, include_blank: false, selected: "0" %>
+        <%= f.label :intelligence %></td>
+      
+      <td>
+        <%= f.check_box :arcane_lore %>&nbsp;<%= f.label :arcane_lore, "Arcane Lore" %><br />
+        <%= f.check_box :brewing %>&nbsp;<%= f.label :brewing, "Brewing" %><br />
+        <%= f.check_box :cartography %>&nbsp;<%= f.label :cartography, "Cartography" %><br />
+        <%= f.check_box :cryptography %>&nbsp;<%= f.label :cryptography, "Cryptography" %><br />
+        <%= f.check_box :cultural_lore %>&nbsp;<%= f.label :cultural_lore, "Cultural Lore" %><br />
+        <%= f.check_box :engineering %>&nbsp;<%= f.label :engineering, "Engineering" %><br />
+        <%= f.check_box :evaluation %>&nbsp;<%= f.label :evaluation, "Evaluation" %><br />
+        <%= f.check_box :healing %>&nbsp;<%= f.label :healing, "Healing" %><br />
+        <%= f.check_box :heraldry %>&nbsp;<%= f.label :heraldry, "Heraldry" %><br />
+        <%= f.check_box :historical_lore %>&nbsp;<%= f.label :historical_lore, "Historical Lore" %><br />
+        <%= f.check_box :military_lore %>&nbsp;<%= f.label :military_lore, "Military Lore" %><br />
+        <%= f.check_box :musical_lore %>&nbsp;<%= f.label :musical_lore, "Musical Lore" %><br />
+        <%= f.check_box :natural_lore %>&nbsp;<%= f.label :natural_lore, "Natural Lore" %><br />
+        <%= f.check_box :navigation %>&nbsp;<%= f.label :navigation, "Navigation" %><br />
+        <%= f.check_box :religious_lore %>&nbsp;<%= f.label :religious_lore, "Religious Lore" %><br />
+        <%= f.check_box :research %>&nbsp;<%= f.label :research, "Research" %><br />
+        <%= f.check_box :writing %>&nbsp;<%= f.label :writing, "Writing" %>
+      </td>
+    </div>
+  </tr>
+  
+  <tr>
+    <div class="form-inline">
+      <td><%= f.select :perception, @ability_options, include_blank: false, selected: "0" %>
+        <%= f.label :perception %></td>
+      
+      <td>
+        <%= f.check_box :empathy %>&nbsp;<%= f.label :empathy, "Empathy" %><br />
+        <%= f.check_box :hearing %>&nbsp;<%= f.label :hearing, "Hearing" %><br />
+        <%= f.check_box :searching %>&nbsp;<%= f.label :searching, "Searching" %><br />
+        <%= f.check_box :seeing %>&nbsp;<%= f.label :seeing, "Seeing" %><br />
+        <%= f.check_box :smelling %>&nbsp;<%= f.label :smelling, "Smelling" %><br />
+        <%= f.check_box :tracking %>&nbsp;<%= f.label :tracking, "Tracking" %>
+      </td>
+    </div>
+  </tr>
+  
+  <tr>
+    <div class="form-inline">
+      <td><%= f.select :strength, @ability_options, include_blank: false, selected: "0" %>
+        <%= f.label :strength %></td>
+      
+      <td>
+        <%= f.check_box :climbing %>&nbsp;<%= f.label :climbing, "Climbing" %><br />
+        <%= f.check_box :driving %>&nbsp;<%= f.label :driving, "Driving" %><br />
+        <%= f.check_box :intimidation %>&nbsp;<%= f.label :intimidation, "Intimidation" %><br />
+        <%= f.check_box :jumping %>&nbsp;<%= f.label :jumping, "Jumping" %><br />
+        <%= f.check_box :might %>&nbsp;<%= f.label :might, "Might" %><br />
+        <%= f.check_box :smithing %>&nbsp;<%= f.label :smithing, "Smithing" %>
+      </td>
+    </div>
+  </tr>
+  
+  <tr>
+    <div class="form-inline">
+      <td><%= f.select :willpower, @ability_options, include_blank: false, selected: "0" %>
+        <%= f.label :willpower %></td>
+      
+      <td>
+        <%= f.check_box :courage %>&nbsp;<%= f.label :courage, "Courage" %><br />
+        <%= f.check_box :faith %>&nbsp;<%= f.label :faith, "Faith" %><br />
+        <%= f.check_box :morale %>&nbsp;<%= f.label :morale, "Morale" %><br />
+        <%= f.check_box :self_discipline %>&nbsp;<%= f.label :self_discipline, "Self-Discipline" %>
+      </td>
+    </div>
+  </tr>
+  
 </table>
 
 <br /><br />

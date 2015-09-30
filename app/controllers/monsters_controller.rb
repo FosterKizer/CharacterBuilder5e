@@ -7,6 +7,10 @@ class MonstersController < ApplicationController
     con_check
     dex_check
     fig_check
+    int_check
+    per_check
+    str_check
+    wil_check
   end
   
   def new
@@ -34,7 +38,11 @@ class MonstersController < ApplicationController
       :gambling, :investigation, :leadership, :performance, :persuasion, :seduction, :constitution, :drinking, :rowing, 
       :running, :stamina, :swimming, :dexterity, :acrobatics, :calligraphy, :crafting, :initiative, :legerdemain,
       :lock_picking, :riding, :piloting, :sailing, :stealth, :traps, :fighting, :axes, :bludgeons, :heavy_blades,
-      :lances, :polearms, :spears)
+      :lances, :polearms, :spears, :intelligence, :arcane_lore, :brewing, :cartography, :cryptography, :cultural_lore,
+      :engineering, :evaluation, :healing, :heraldry, :historical_lore, :military_lore, :musical_lore, :natural_lore,
+      :navigation, :religious_lore, :research, :writing, :perception, :empathy, :hearing, :searching, :seeing,
+      :smelling, :tracking, :strength, :climbing, :driving, :intimidation, :jumping, :might, :smithing, :willpower,
+      :courage, :faith, :morale, :self_discipline)
   end
   
   def acc_check
@@ -111,6 +119,67 @@ class MonstersController < ApplicationController
     
     @fig_true_list = fig_true.join(", ")
     @fig_total = fig_true.count
+  end
+  
+  def int_check
+    int_true = []
+    int_true << "Arcane Lore" if @monster.arcane_lore == true
+    int_true << "Brewing" if @monster.brewing == true
+    int_true << "Cartography" if @monster.cartography == true
+    int_true << "Cryptography" if @monster.cryptography == true
+    int_true << "Cultural Lore" if @monster.cultural_lore == true
+    int_true << "Engineering" if @monster.engineering == true
+    int_true << "Evaluation" if @monster.evaluation == true
+    int_true << "Healing" if @monster.healing == true
+    int_true << "Heraldry" if @monster.heraldry == true
+    int_true << "Histroical Lore" if @monster.historical_lore == true
+    int_true << "Military Lore" if @monster.military_lore == true
+    int_true << "Musical Lore" if @monster.musical_lore == true
+    int_true << "Natural Lore" if @monster.natural_lore == true
+    int_true << "Navigation" if @monster.navigation == true
+    int_true << "Religious Lore" if @monster.religious_lore == true
+    int_true << "Research" if @monster.research == true
+    int_true << "Writing" if @monster.writing == true
+    
+    @int_true_list = int_true.join(", ")
+    @int_total = int_true.count
+  end
+  
+  def per_check
+    per_true = []
+    per_true << "Empathy" if @monster.empathy == true
+    per_true << "Hearing" if @monster.hearing == true
+    per_true << "Searching" if @monster.searching == true
+    per_true << "Seeing" if @monster.seeing == true
+    per_true << "Smelling" if @monster.smelling == true
+    per_true << "Tracking" if @monster.tracking == true
+    
+    @per_true_list = per_true.join(", ")
+    @per_total = per_true.count
+  end
+  
+  def str_check
+    str_true = []
+    str_true << "Climbing" if @monster.climbing == true
+    str_true << "Driving" if @monster.driving == true
+    str_true << "Intimidation" if @monster.intimidation == true
+    str_true << "Jumping" if @monster.jumping == true
+    str_true << "Might" if @monster.might == true
+    str_true << "Smithing" if @monster.smithing == true
+    
+    @str_true_list = str_true.join(", ")
+    @str_total = str_true.count
+  end
+  
+  def wil_check
+    wil_true = []
+    wil_true << "Courage" if @monster.courage == true
+    wil_true << "Faith" if @monster.faith == true
+    wil_true << "Morale" if @monster.morale == true
+    wil_true << "Self-Discipline" if @monster.self_discipline == true
+    
+    @wil_true_list = wil_true.join(", ")
+    @wil_total = wil_true.count
   end
   
 end

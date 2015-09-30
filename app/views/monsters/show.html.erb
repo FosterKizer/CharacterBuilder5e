@@ -6,9 +6,9 @@
     
     <table class="table">
       
-      <tr class="danger">
-        <td><strong><%= @monster.name %></strong></td>
-        <td class="text-right"><strong><%= @monster.mon_type %></strong></td>
+      <tr class="danger text-center">
+        <td colspan="2"><strong class="text-left"><%= @monster.name %></strong>
+        <em>(<%= @monster.mon_type %>)</em></td>
       </tr>
       
       <tr class="warning text-center">
@@ -20,7 +20,7 @@
         <% if @acc_total == 0 %>
           <td class="text-center">Accuracy</td>
         <% else %>
-          <td class="text-center">Accuracy(<%= @acc_true_list %>)</td>
+          <td class="text-center">Accuracy (<%= @acc_true_list %>)</td>
         <% end %>
       </tr>
       
@@ -29,7 +29,7 @@
         <% if @com_total == 0 %>
           <td class="text-center">Communication</td>
         <% else %>
-          <td class="text-center">Communication(<%= @com_true_list %>)</td>
+          <td class="text-center">Communication (<%= @com_true_list %>)</td>
         <% end %>
       </tr>
       
@@ -38,7 +38,7 @@
         <% if @con_total == 0 %>
           <td class="text-center">Constitution</td>
         <% else %>
-          <td class="text-center">Constitution(<%= @con_true_list %>)</td>
+          <td class="text-center">Constitution (<%= @con_true_list %>)</td>
         <% end %>
       </tr>
       
@@ -47,7 +47,7 @@
         <% if @dex_total == 0 %>
           <td class="text-center">Dexterity</td>
         <% else %>
-          <td class="text-center">Dexterity(<%= @dex_true_list %>)</td>
+          <td class="text-center">Dexterity (<%= @dex_true_list %>)</td>
         <% end %>
       </tr>
       
@@ -56,7 +56,43 @@
         <% if @fig_total == 0 %>
           <td class="text-center">Fighting</td>
         <% else %>
-          <td class="text-center">Fighting(<%= @fig_true_list %>)</td>
+          <td class="text-center">Fighting (<%= @fig_true_list %>)</td>
+        <% end %>
+      </tr>
+      
+      <tr>
+        <td class="text-center"><%= @monster.intelligence %></td>
+        <% if @int_total == 0 %>
+          <td class="text-center">Intelligence</td>
+        <% else %>
+          <td class="text-center">Intelligence (<%= @int_true_list %>)</td>
+        <% end %>
+      </tr>
+      
+      <tr>
+        <td class="text-center"><%= @monster.perception %></td>
+        <% if @per_total == 0 %>
+          <td class="text-center">Perception</td>
+        <% else %>
+          <td class="text-center">Perception (<%= @per_true_list %>)</td>
+        <% end %>
+      </tr>
+      
+      <tr>
+        <td class="text-center"><%= @monster.strength %></td>
+        <% if @str_total == 0 %>
+          <td class="text-center">Strength</td>
+        <% else %>
+          <td class="text-center">Strength (<%= @str_true_list %>)</td>
+        <% end %>
+      </tr>
+      
+      <tr>
+        <td class="text-center"><%= @monster.willpower %></td>
+        <% if @wil_total == 0 %>
+          <td class="text-center">Willpower</td>
+        <% else %>
+          <td class="text-center">Willpower (<%= @wil_true_list %>)</td>
         <% end %>
       </tr>
       

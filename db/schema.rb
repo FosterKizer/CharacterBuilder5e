@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150919031632) do
+ActiveRecord::Schema.define(version: 20150930003825) do
 
   create_table "monsters", force: :cascade do |t|
     t.string   "name"
@@ -64,6 +64,43 @@ ActiveRecord::Schema.define(version: 20150919031632) do
     t.boolean  "lances"
     t.boolean  "polearms"
     t.boolean  "spears"
+    t.string   "intelligence"
+    t.boolean  "arcane_lore"
+    t.boolean  "brewing"
+    t.boolean  "cartography"
+    t.boolean  "cryptography"
+    t.boolean  "cultural_lore"
+    t.boolean  "engineering"
+    t.boolean  "evaluation"
+    t.boolean  "healing"
+    t.boolean  "heraldry"
+    t.boolean  "historical_lore"
+    t.boolean  "military_lore"
+    t.boolean  "musical_lore"
+    t.boolean  "natural_lore"
+    t.boolean  "navigation"
+    t.boolean  "religious_lore"
+    t.boolean  "research"
+    t.boolean  "writing"
+    t.string   "perception"
+    t.boolean  "empathy"
+    t.boolean  "hearing"
+    t.boolean  "searching"
+    t.boolean  "seeing"
+    t.boolean  "smelling"
+    t.boolean  "tracking"
+    t.string   "strength"
+    t.boolean  "climbing"
+    t.boolean  "driving"
+    t.boolean  "intimidation"
+    t.boolean  "jumping"
+    t.boolean  "might"
+    t.boolean  "smithing"
+    t.string   "willpower"
+    t.boolean  "courage"
+    t.boolean  "faith"
+    t.boolean  "morale"
+    t.boolean  "self_discipline"
   end
 
   create_table "users", force: :cascade do |t|
