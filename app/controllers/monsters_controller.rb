@@ -16,6 +16,8 @@ class MonstersController < ApplicationController
   def new
     @monster = Monster.new
     @ability_options = ["-5","-4","-3","-2","-1","0","1","2","3","4","5","6","7","8","9","10"]
+    @attack_options = ["-5","-4","-3","-2","-1","0","+1","+2","+3","+4","+5","+6","+7","+8","+9","+10","+11","+12",
+      "+13","+14","+15","+16","+17","+18","+19","+20"]
   end
   
   def create
@@ -43,7 +45,8 @@ class MonstersController < ApplicationController
       :navigation, :religious_lore, :research, :writing, :perception, :empathy, :hearing, :searching, :seeing,
       :smelling, :tracking, :strength, :climbing, :driving, :intimidation, :jumping, :might, :smithing, :willpower,
       :courage, :faith, :morale, :self_discipline, :speed, :health, :defense, :armor, :s_ability_confirmation,
-      :spellpower, :mana)
+      :spellpower, :mana, :weapon_1, :weapon_2, :weapon_3, :weapon_4, :weapon_5, :attack_1, :attack_2, :attack_3,
+      :attack_4, :attack_5, :damage_1, :damage_2, :damage_3, :damage_4, :damage_5)
   end
   
   def acc_check

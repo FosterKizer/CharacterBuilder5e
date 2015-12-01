@@ -122,6 +122,50 @@
         <% end %>
       </tr>
       
+      <tr class="warning text-center">
+        <td colspan="2"><strong>Attacks</strong></td>
+      </tr>
+      
+      <% if @monster.weapon_1? %>
+        <tr>
+          <td colspan="2">
+            <strong><%= @monster.weapon_1 %>:</strong> <%= @monster.attack_1 %> to hit, <%= @monster.damage_1 %> damage.
+          </td>
+        </tr>
+      <% end %>
+      
+      <% if @monster.weapon_2? %>
+        <tr>
+          <td colspan="2">
+            <strong><%= @monster.weapon_2 %>:</strong> <%= @monster.attack_2 %> to hit, <%= @monster.damage_2 %> damage.
+          </td>
+        </tr>
+      <% end %>
+      
+      <% if @monster.weapon_3? %>
+        <tr>
+          <td colspan="2">
+            <strong><%= @monster.weapon_3 %>:</strong> <%= @monster.attack_3 %> to hit, <%= @monster.damage_3 %> damage.
+          </td>
+        </tr>
+      <% end %>
+      
+      <% if @monster.weapon_4? %>
+        <tr>
+          <td colspan="2">
+            <strong><%= @monster.weapon_4 %>:</strong> <%= @monster.attack_4 %> to hit, <%= @monster.damage_4 %> damage.
+          </td>
+        </tr>
+      <% end %>
+      
+      <% if @monster.weapon_5? %>
+        <tr>
+          <td colspan="2">
+            <strong><%= @monster.weapon_5 %>:</strong> <%= @monster.attack_5 %> to hit, <%= @monster.damage_5 %> damage.
+          </td>
+        </tr>
+      <% end %>
+      
     </table>
     
   </div>

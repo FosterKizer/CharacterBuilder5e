@@ -2,37 +2,42 @@
 
 <table class="table">
   <tr class="danger text-center">
-    <td><%= f.label :name %>
-      <%= f.text_field :name, class: 'form-control', placeholder: "Enter Name" %></td>
+    <td colspan="3">
+      <%= f.label :name %>&nbsp;&nbsp;
+      <%= f.text_field :name, class: 'form-inline', placeholder: "Enter Name" %>&nbsp;&nbsp;&nbsp;&nbsp;
   
-    <td><%= f.label :mon_type, "Type" %>
-      <%= f.text_field :mon_type, class: 'form-control', placeholder: "Enter Type" %></td>
+      <%= f.label :mon_type, "Type" %>&nbsp;&nbsp;
+      <%= f.text_field :mon_type, class: 'form-inline', placeholder: "Enter Type" %>
+    </td>
   </tr>
   
   <tr class="warning text-center">
-    <td colspan="2"><strong>Combat Ratings</strong></td>
+    <td colspan="3"><strong>Combat Ratings</strong></td>
   </tr>
   
-  <tr class="text-center">
-    <td colspan="2">
+  <tr>
+    <td class="text-right">
       <%= f.label :speed %>&nbsp;&nbsp;<%= f.text_field :speed, class: 'from-inline', 
-        placeholder: "?", size: 4 %>&nbsp;&nbsp;&nbsp;
+        placeholder: "?", size: 4 %>&nbsp;&nbsp;<br />
       <%= f.label :health %>&nbsp;&nbsp;<%= f.text_field :health, class: 'form-inline', 
-        placeholder: "?", size: 4 %>&nbsp;&nbsp;&nbsp;
-      <%= f.label :defense %>&nbsp;&nbsp;<%= f.text_field :defense, class: 'form-inline', 
-        placeholder: "?", size: 4 %>&nbsp;&nbsp;&nbsp;
-      <%= f.label :armor %>&nbsp;&nbsp;<%= f.text_field :armor, class: 'form-inline', 
+        placeholder: "?", size: 4 %>&nbsp;&nbsp;
+    </td>
+    <td></td>
+    <td>
+      &nbsp;&nbsp;<%= f.label :defense %>&nbsp;&nbsp;<%= f.text_field :defense, class: 'form-inline', 
+        placeholder: "?", size: 4 %><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.label :armor %>&nbsp;&nbsp;<%= f.text_field :armor, class: 'form-inline', 
         placeholder: "?", size: 4 %>
     </td>
   </tr>
   
   <tr class="warning text-center">
-    <td colspan="2"><strong>Spellcasting Ability</strong></td>
+    <td colspan="3"><strong>Spellcasting Ability</strong></td>
   </tr>
   
   <tr class="text-center">
-    <td colspan="2">
-      <%= f.label :s_ability_confirmation, "Spellcaster?" %>&nbsp;<%= f.check_box :s_ability_confirmation %>&nbsp;&nbsp;
+    <td colspan="3">
+      <%= f.label :s_ability_confirmation, "Spellcaster?" %>&nbsp;<%= f.check_box :s_ability_confirmation %><br />
       <%= f.label :spellpower %>&nbsp;&nbsp;<%= f.text_field :spellpower, class: 'form-inline',
         placeholder: "?", size: 4 %>&nbsp;&nbsp;&nbsp;
       <%= f.label :mana %>&nbsp;&nbsp;<%= f.text_field :mana, class: 'form-inline',
@@ -41,13 +46,13 @@
   </tr>
   
   <tr class="warning text-center">
-    <td><strong>Ability</strong></td>
+    <td colspan="2"><strong>Ability</strong></td>
     <td><strong>Focuses</strong></td>
   </tr>
   
   <tr>
     <div class="form-inline">
-      <td><%= f.select :accuracy, @ability_options, include_blank: false, selected: "0" %>
+      <td colspan="2"><%= f.select :accuracy, @ability_options, include_blank: false, selected: "0" %>
         <%= f.label :accuracy %></td>
       
       <td>
@@ -65,7 +70,7 @@
 
   <tr>
     <div class="form-inline">
-      <td><%= f.select :communication, @ability_options, include_blank: false, selected: "0" %>
+      <td colspan="2"><%= f.select :communication, @ability_options, include_blank: false, selected: "0" %>
         <%= f.label :communication %></td>
  
       <td>
@@ -86,7 +91,7 @@
   
   <tr>
     <div class="form-inline">
-      <td><%= f.select :constitution, @ability_options, include_blank: false, selected: "0" %>
+      <td colspan="2"><%= f.select :constitution, @ability_options, include_blank: false, selected: "0" %>
         <%= f.label :constitution %></td>
       
       <td>
@@ -101,7 +106,7 @@
   
   <tr>
     <div class="form-inline">
-      <td><%= f.select :dexterity, @ability_options, include_blank: false, selected: "0" %>
+      <td colspan="2"><%= f.select :dexterity, @ability_options, include_blank: false, selected: "0" %>
         <%= f.label :dexterity %></td>
       
       <td>
@@ -122,7 +127,7 @@
   
   <tr>
     <div class="form-inline">
-      <td><%= f.select :fighting, @ability_options, include_blank: false, selected: "0" %>
+      <td colspan="2"><%= f.select :fighting, @ability_options, include_blank: false, selected: "0" %>
         <%= f.label :fighting %></td>
       
       <td>
@@ -138,7 +143,7 @@
   
   <tr>
     <div class="form-inline">
-      <td><%= f.select :intelligence, @ability_options, include_blank: false, selected: "0" %>
+      <td colspan="2"><%= f.select :intelligence, @ability_options, include_blank: false, selected: "0" %>
         <%= f.label :intelligence %></td>
       
       <td>
@@ -165,7 +170,7 @@
   
   <tr>
     <div class="form-inline">
-      <td><%= f.select :perception, @ability_options, include_blank: false, selected: "0" %>
+      <td colspan="2"><%= f.select :perception, @ability_options, include_blank: false, selected: "0" %>
         <%= f.label :perception %></td>
       
       <td>
@@ -181,7 +186,7 @@
   
   <tr>
     <div class="form-inline">
-      <td><%= f.select :strength, @ability_options, include_blank: false, selected: "0" %>
+      <td colspan="2"><%= f.select :strength, @ability_options, include_blank: false, selected: "0" %>
         <%= f.label :strength %></td>
       
       <td>
@@ -197,7 +202,7 @@
   
   <tr>
     <div class="form-inline">
-      <td><%= f.select :willpower, @ability_options, include_blank: false, selected: "0" %>
+      <td colspan="2"><%= f.select :willpower, @ability_options, include_blank: false, selected: "0" %>
         <%= f.label :willpower %></td>
       
       <td>
@@ -207,6 +212,95 @@
         <%= f.check_box :self_discipline %>&nbsp;<%= f.label :self_discipline, "Self-Discipline" %>
       </td>
     </div>
+  </tr>
+  
+  <tr class="warning text-center">
+    <td colspan="3"><strong>Attacks</strong></td>
+  </tr>
+  
+  <tr>
+    <td class="text-center">
+      <%= f.label :weapon_1, "Weapon" %><br />
+      <%= f.text_field :weapon_1, class: 'form-inline', placeholder: "Leave clear if none" %>
+    </td>
+      
+    <td class="text-center">
+      <%= f.label :attack_1, "Attack Roll" %><br />
+      <%= f.select :attack_1, @attack_options, include_blank: false, selected: "0" %>
+    </td>
+    
+    <td class="text-center">      
+      <%= f.label :damage_1, "Damage" %><br />
+      <%= f.text_field :damage_1, class: 'form-inline' %>
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="text-center">
+      <%= f.label :weapon_2, "Weapon" %><br />
+      <%= f.text_field :weapon_2, class: 'form-inline', placeholder: "Leave clear if none" %>
+    </td>
+      
+    <td class="text-center">
+      <%= f.label :attack_2, "Attack Roll" %><br />
+      <%= f.select :attack_2, @attack_options, include_blank: false, selected: "0" %>
+    </td>
+    
+    <td class="text-center">      
+      <%= f.label :damage_2, "Damage" %><br />
+      <%= f.text_field :damage_2, class: 'form-inline' %>
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="text-center">
+      <%= f.label :weapon_3, "Weapon" %><br />
+      <%= f.text_field :weapon_3, class: 'form-inline', placeholder: "Leave clear if none" %>
+    </td>
+      
+    <td class="text-center">
+      <%= f.label :attack_3, "Attack Roll" %><br />
+      <%= f.select :attack_3, @attack_options, include_blank: false, selected: "0" %>
+    </td>
+    
+    <td class="text-center">      
+      <%= f.label :damage_3, "Damage" %><br />
+      <%= f.text_field :damage_3, class: 'form-inline' %>
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="text-center">
+      <%= f.label :weapon_4, "Weapon" %><br />
+      <%= f.text_field :weapon_4, class: 'form-inline', placeholder: "Leave clear if none" %>
+    </td>
+      
+    <td class="text-center">
+      <%= f.label :attack_4, "Attack Roll" %><br />
+      <%= f.select :attack_4, @attack_options, include_blank: false, selected: "0" %>
+    </td>
+    
+    <td class="text-center">      
+      <%= f.label :damage_4, "Damage" %><br />
+      <%= f.text_field :damage_4, class: 'form-inline' %>
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="text-center">
+      <%= f.label :weapon_5, "Weapon" %><br />
+      <%= f.text_field :weapon_5, class: 'form-inline', placeholder: "Leave clear if none" %>
+    </td>
+      
+    <td class="text-center">
+      <%= f.label :attack_5, "Attack Roll" %><br />
+      <%= f.select :attack_5, @attack_options, include_blank: false, selected: "0" %>
+    </td>
+    
+    <td class="text-center">      
+      <%= f.label :damage_5, "Damage" %><br />
+      <%= f.text_field :damage_5, class: 'form-inline' %>
+    </td>
   </tr>
   
 </table>

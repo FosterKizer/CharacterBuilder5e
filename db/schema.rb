@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151201023137) do
+ActiveRecord::Schema.define(version: 20151201184903) do
 
   create_table "monsters", force: :cascade do |t|
     t.string   "name"
@@ -108,6 +108,21 @@ ActiveRecord::Schema.define(version: 20151201023137) do
     t.boolean  "s_ability_confirmation"
     t.integer  "spellpower"
     t.integer  "mana"
+    t.string   "weapon_1"
+    t.string   "attack_1"
+    t.string   "damage_1"
+    t.string   "weapon_2"
+    t.string   "weapon_3"
+    t.string   "weapon_4"
+    t.string   "weapon_5"
+    t.string   "attack_2"
+    t.string   "attack_3"
+    t.string   "attack_4"
+    t.string   "attack_5"
+    t.string   "damage_2"
+    t.string   "damage_3"
+    t.string   "damage_4"
+    t.string   "damage_5"
   end
 
   create_table "users", force: :cascade do |t|
