@@ -63,7 +63,9 @@
         <%= f.check_box :dueling %>&nbsp;<%= f.label :dueling, "Dueling" %><br />
         <%= f.check_box :grenades %>&nbsp;<%= f.label :grenades, "Grenades" %><br />
         <%= f.check_box :light_blades %>&nbsp;<%= f.label :light_blades, "Light Blades" %><br />
-        <%= f.check_box :staves %>&nbsp;<%= f.label :staves, "Staves" %>
+        <%= f.check_box :staves %>&nbsp;<%= f.label :staves, "Staves" %><br />
+        <%= f.check_box :accuracy_other_check %>&nbsp;<%= f.label :accuracy_other_check, "Other:" %>
+        <%= f.text_field :accuracy_other, class: 'form-inline' %>
       </td>
     </div>
   </tr>
@@ -84,7 +86,9 @@
         <%= f.check_box :leadership %>&nbsp;<%= f.label :leadership, "Leadership" %><br />
         <%= f.check_box :performance %>&nbsp;<%= f.label :performance, "Performance" %><br />
         <%= f.check_box :persuasion %>&nbsp;<%= f.label :persuasion, "Persuasion" %><br />
-        <%= f.check_box :seduction %>&nbsp;<%= f.label :seduction, "Seduction" %>
+        <%= f.check_box :seduction %>&nbsp;<%= f.label :seduction, "Seduction" %><br />
+        <%= f.check_box :communication_other_check %>&nbsp;<%= f.label :communication_other_check, "Other:" %>
+        <%= f.text_field :communication_other, class: 'form-inline' %>
       </td>
     </div>
   </tr>
@@ -99,7 +103,9 @@
         <%= f.check_box :rowing %>&nbsp;<%= f.label :rowing, "Rowing" %><br />
         <%= f.check_box :running %>&nbsp;<%= f.label :running, "Running" %><br />
         <%= f.check_box :stamina %>&nbsp;<%= f.label :stamina, "Stamina" %><br />
-        <%= f.check_box :swimming %>&nbsp;<%= f.label :swimming, "Swimming" %>
+        <%= f.check_box :swimming %>&nbsp;<%= f.label :swimming, "Swimming" %><br />
+        <%= f.check_box :constitution_other_check %>&nbsp;<%= f.label :constitution_other_check, "Other:" %>
+        <%= f.text_field :constitution_other, class: 'form-inline' %>
       </td>
     </div>
   </tr>
@@ -120,7 +126,9 @@
         <%= f.check_box :piloting %>&nbsp;<%= f.label :piloting, "Piloting" %><br />
         <%= f.check_box :sailing %>&nbsp;<%= f.label :sailing, "Sailing" %><br />
         <%= f.check_box :stealth %>&nbsp;<%= f.label :stealth, "Stealth" %><br />
-        <%= f.check_box :traps %>&nbsp;<%= f.label :traps, "Traps" %>
+        <%= f.check_box :traps %>&nbsp;<%= f.label :traps, "Traps" %><br />
+        <%= f.check_box :dexterity_other_check %>&nbsp;<%= f.label :dexterity_other_check, "Other:" %>
+        <%= f.text_field :dexterity_other, class: 'form-inline' %>
       </td>
     </div>
   </tr>
@@ -136,7 +144,9 @@
         <%= f.check_box :heavy_blades %>&nbsp;<%= f.label :heavy_blades, "Heavy Blades" %><br />
         <%= f.check_box :lances %>&nbsp;<%= f.label :lances, "Lances" %><br />
         <%= f.check_box :polearms %>&nbsp;<%= f.label :polearms, "Polearms" %><br />
-        <%= f.check_box :spears %>&nbsp;<%= f.label :spears, "Spears" %>
+        <%= f.check_box :spears %>&nbsp;<%= f.label :spears, "Spears" %><br />
+        <%= f.check_box :fighting_other_check %>&nbsp;<%= f.label :fighting_other_check, "Other:" %>
+        <%= f.text_field :fighting_other, class: 'form-inline' %>
       </td>
     </div>
   </tr>
@@ -163,7 +173,9 @@
         <%= f.check_box :navigation %>&nbsp;<%= f.label :navigation, "Navigation" %><br />
         <%= f.check_box :religious_lore %>&nbsp;<%= f.label :religious_lore, "Religious Lore" %><br />
         <%= f.check_box :research %>&nbsp;<%= f.label :research, "Research" %><br />
-        <%= f.check_box :writing %>&nbsp;<%= f.label :writing, "Writing" %>
+        <%= f.check_box :writing %>&nbsp;<%= f.label :writing, "Writing" %><br />
+        <%= f.check_box :intelligence_other_check %>&nbsp;<%= f.label :intelligence_other_check, "Other:" %>
+        <%= f.text_field :intelligence_other, class: 'form-inline' %>
       </td>
     </div>
   </tr>
@@ -179,7 +191,9 @@
         <%= f.check_box :searching %>&nbsp;<%= f.label :searching, "Searching" %><br />
         <%= f.check_box :seeing %>&nbsp;<%= f.label :seeing, "Seeing" %><br />
         <%= f.check_box :smelling %>&nbsp;<%= f.label :smelling, "Smelling" %><br />
-        <%= f.check_box :tracking %>&nbsp;<%= f.label :tracking, "Tracking" %>
+        <%= f.check_box :tracking %>&nbsp;<%= f.label :tracking, "Tracking" %><br />
+        <%= f.check_box :perception_other_check %>&nbsp;<%= f.label :perception_other_check, "Other:" %>
+        <%= f.text_field :perception_other, class: 'form-inline' %>
       </td>
     </div>
   </tr>
@@ -195,7 +209,9 @@
         <%= f.check_box :intimidation %>&nbsp;<%= f.label :intimidation, "Intimidation" %><br />
         <%= f.check_box :jumping %>&nbsp;<%= f.label :jumping, "Jumping" %><br />
         <%= f.check_box :might %>&nbsp;<%= f.label :might, "Might" %><br />
-        <%= f.check_box :smithing %>&nbsp;<%= f.label :smithing, "Smithing" %>
+        <%= f.check_box :smithing %>&nbsp;<%= f.label :smithing, "Smithing" %><br />
+        <%= f.check_box :strength_other_check %>&nbsp;<%= f.label :strength_other_check, "Other:" %>
+        <%= f.text_field :strength_other, class: 'form-inline' %>
       </td>
     </div>
   </tr>
@@ -209,7 +225,9 @@
         <%= f.check_box :courage %>&nbsp;<%= f.label :courage, "Courage" %><br />
         <%= f.check_box :faith %>&nbsp;<%= f.label :faith, "Faith" %><br />
         <%= f.check_box :morale %>&nbsp;<%= f.label :morale, "Morale" %><br />
-        <%= f.check_box :self_discipline %>&nbsp;<%= f.label :self_discipline, "Self-Discipline" %>
+        <%= f.check_box :self_discipline %>&nbsp;<%= f.label :self_discipline, "Self-Discipline" %><br />
+        <%= f.check_box :willpower_other_check %>&nbsp;<%= f.label :willpower_other_check, "Other:" %>
+        <%= f.text_field :willpower_other, class: 'form-inline' %>
       </td>
     </div>
   </tr>
@@ -221,85 +239,110 @@
   <tr>
     <td class="text-center">
       <%= f.label :weapon_1, "Weapon" %><br />
-      <%= f.text_field :weapon_1, class: 'form-inline', placeholder: "Leave clear if none" %>
+      <%= f.text_field :weapon_1, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br /><br />
+      <%= f.label :range_1, "Ranged?" %>&nbsp;<%= f.check_box :range_1 %>
     </td>
       
     <td class="text-center">
       <%= f.label :attack_1, "Attack Roll" %><br />
-      <%= f.select :attack_1, @attack_options, include_blank: false, selected: "0" %>
+      <%= f.select :attack_1, @attack_options, include_blank: false, selected: "0" %><br /><br />
+      <%= f.label :distance_1, "Distance" %><br />
+      <%= f.text_field :distance_1, class: 'form-inline', size: 10, placeholder: "Ex: 25/50 ft" %>
     </td>
     
     <td class="text-center">      
       <%= f.label :damage_1, "Damage" %><br />
-      <%= f.text_field :damage_1, class: 'form-inline' %>
+      <%= f.text_field :damage_1, class: 'form-inline', placeholder: "Ex: 1d8+4 Slashing" %><br /><br />
+      <%= f.label :target_1, "Target" %><br />
+      <%= f.text_field :target_1, class: 'form-inline', placeholder: "Ex: Single Target" %>
     </td>
   </tr>
   
   <tr>
     <td class="text-center">
       <%= f.label :weapon_2, "Weapon" %><br />
-      <%= f.text_field :weapon_2, class: 'form-inline', placeholder: "Leave clear if none" %>
+      <%= f.text_field :weapon_2, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br /><br />
+      <%= f.label :range_2, "Ranged?" %>&nbsp;<%= f.check_box :range_2 %>
     </td>
       
     <td class="text-center">
       <%= f.label :attack_2, "Attack Roll" %><br />
-      <%= f.select :attack_2, @attack_options, include_blank: false, selected: "0" %>
+      <%= f.select :attack_2, @attack_options, include_blank: false, selected: "0" %><br /><br />
+      <%= f.label :distance_2, "Distance" %><br />
+      <%= f.text_field :distance_2, class: 'form-inline', size: 10, placeholder: "Ex: 25/50 ft" %>
     </td>
     
     <td class="text-center">      
       <%= f.label :damage_2, "Damage" %><br />
-      <%= f.text_field :damage_2, class: 'form-inline' %>
+      <%= f.text_field :damage_2, class: 'form-inline', placeholder: "Ex: 1d8+4 Slashing" %><br /><br />
+      <%= f.label :target_2, "Target" %><br />
+      <%= f.text_field :target_2, class: 'form-inline', placeholder: "Ex: Single Target" %>
     </td>
   </tr>
   
   <tr>
     <td class="text-center">
       <%= f.label :weapon_3, "Weapon" %><br />
-      <%= f.text_field :weapon_3, class: 'form-inline', placeholder: "Leave clear if none" %>
+      <%= f.text_field :weapon_3, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br /><br />
+      <%= f.label :range_3, "Ranged?" %>&nbsp;<%= f.check_box :range_3 %>
     </td>
       
     <td class="text-center">
       <%= f.label :attack_3, "Attack Roll" %><br />
-      <%= f.select :attack_3, @attack_options, include_blank: false, selected: "0" %>
+      <%= f.select :attack_3, @attack_options, include_blank: false, selected: "0" %><br /><br />
+      <%= f.label :distance_3, "Distance" %><br />
+      <%= f.text_field :distance_3, class: 'form-inline', size: 10, placeholder: "Ex: 25/50 ft" %>
     </td>
     
     <td class="text-center">      
       <%= f.label :damage_3, "Damage" %><br />
-      <%= f.text_field :damage_3, class: 'form-inline' %>
+      <%= f.text_field :damage_3, class: 'form-inline', placeholder: "Ex: 1d8+4 Slashing" %><br /><br />
+      <%= f.label :target_3, "Target" %><br />
+      <%= f.text_field :target_3, class: 'form-inline', placeholder: "Ex: Single Target" %>
     </td>
   </tr>
   
   <tr>
     <td class="text-center">
       <%= f.label :weapon_4, "Weapon" %><br />
-      <%= f.text_field :weapon_4, class: 'form-inline', placeholder: "Leave clear if none" %>
+      <%= f.text_field :weapon_4, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br /><br />
+      <%= f.label :range_4, "Ranged?" %>&nbsp;<%= f.check_box :range_4 %>
     </td>
       
     <td class="text-center">
       <%= f.label :attack_4, "Attack Roll" %><br />
-      <%= f.select :attack_4, @attack_options, include_blank: false, selected: "0" %>
+      <%= f.select :attack_4, @attack_options, include_blank: false, selected: "0" %><br /><br />
+      <%= f.label :distance_4, "Distance" %><br />
+      <%= f.text_field :distance_4, class: 'form-inline', size: 10, placeholder: "Ex: 25/50 ft" %>
     </td>
     
     <td class="text-center">      
       <%= f.label :damage_4, "Damage" %><br />
-      <%= f.text_field :damage_4, class: 'form-inline' %>
+      <%= f.text_field :damage_4, class: 'form-inline', placeholder: "Ex: 1d8+4 Slashing" %><br /><br />
+      <%= f.label :target_4, "Target" %><br />
+      <%= f.text_field :target_4, class: 'form-inline', placeholder: "Ex: Single Target" %>
     </td>
   </tr>
   
   <tr>
     <td class="text-center">
       <%= f.label :weapon_5, "Weapon" %><br />
-      <%= f.text_field :weapon_5, class: 'form-inline', placeholder: "Leave clear if none" %>
+      <%= f.text_field :weapon_5, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br /><br />
+      <%= f.label :range_5, "Ranged?" %>&nbsp;<%= f.check_box :range_5 %>
     </td>
       
     <td class="text-center">
       <%= f.label :attack_5, "Attack Roll" %><br />
-      <%= f.select :attack_5, @attack_options, include_blank: false, selected: "0" %>
+      <%= f.select :attack_5, @attack_options, include_blank: false, selected: "0" %><br /><br />
+      <%= f.label :distance_5, "Distance" %><br />
+      <%= f.text_field :distance_5, class: 'form-inline', size: 10, placeholder: "Ex: 25/50 ft" %>
     </td>
     
     <td class="text-center">      
       <%= f.label :damage_5, "Damage" %><br />
-      <%= f.text_field :damage_5, class: 'form-inline' %>
+      <%= f.text_field :damage_5, class: 'form-inline', placeholder: "Ex: 1d8+4 Slashing" %><br /><br />
+      <%= f.label :target_5, "Target" %><br />
+      <%= f.text_field :target_5, class: 'form-inline', placeholder: "Ex: Single Target" %>
     </td>
   </tr>
   

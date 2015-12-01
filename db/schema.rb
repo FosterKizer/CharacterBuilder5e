@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151201184903) do
+ActiveRecord::Schema.define(version: 20151201232024) do
 
   create_table "monsters", force: :cascade do |t|
     t.string   "name"
     t.string   "mon_type"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
     t.string   "communication"
     t.boolean  "animal_handling"
     t.boolean  "bargaining"
@@ -123,6 +123,39 @@ ActiveRecord::Schema.define(version: 20151201184903) do
     t.string   "damage_3"
     t.string   "damage_4"
     t.string   "damage_5"
+    t.boolean  "accuracy_other_check"
+    t.string   "accuracy_other"
+    t.boolean  "communication_other_check"
+    t.string   "communication_other"
+    t.boolean  "constitution_other_check"
+    t.string   "constitution_other"
+    t.boolean  "dexterity_other_check"
+    t.string   "dexterity_other"
+    t.boolean  "fighting_other_check"
+    t.string   "fighting_other"
+    t.boolean  "intelligence_other_check"
+    t.string   "intelligence_other"
+    t.boolean  "perception_other_check"
+    t.string   "perception_other"
+    t.boolean  "strength_other_check"
+    t.string   "strength_other"
+    t.boolean  "willpower_other_check"
+    t.string   "willpower_other"
+    t.boolean  "range_1"
+    t.boolean  "range_2"
+    t.boolean  "range_3"
+    t.boolean  "range_4"
+    t.boolean  "range_5"
+    t.string   "distance_1"
+    t.string   "distance_2"
+    t.string   "distance_3"
+    t.string   "distance_4"
+    t.string   "distance_5"
+    t.string   "target_1"
+    t.string   "target_2"
+    t.string   "target_3"
+    t.string   "target_4"
+    t.string   "target_5"
   end
 
   create_table "users", force: :cascade do |t|

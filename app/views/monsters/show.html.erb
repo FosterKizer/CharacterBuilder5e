@@ -129,7 +129,16 @@
       <% if @monster.weapon_1? %>
         <tr>
           <td colspan="2">
-            <strong><%= @monster.weapon_1 %>:</strong> <%= @monster.attack_1 %> to hit, <%= @monster.damage_1 %> damage.
+            <strong><%= @monster.weapon_1 %>:</strong> 
+            <em>
+              <% if @monster.range_1 == true %>
+                Ranged Attack,
+              <% else %>
+                Melee Attack,
+              <% end %>
+            </em>
+            <%= @monster.distance_1 %>, <%= @monster.attack_1 %> to hit, <%= @monster.target_1 %>.<br />
+            <em>On Hit:</em> <%= @monster.damage_1 %> damage.
           </td>
         </tr>
       <% end %>
@@ -137,7 +146,16 @@
       <% if @monster.weapon_2? %>
         <tr>
           <td colspan="2">
-            <strong><%= @monster.weapon_2 %>:</strong> <%= @monster.attack_2 %> to hit, <%= @monster.damage_2 %> damage.
+            <strong><%= @monster.weapon_2 %>:</strong>
+            <em>
+              <% if @monster.range_2 == true %>
+                Ranged Attack,
+              <% else %>
+                Melee Attack,
+              <% end %>
+            </em>
+            <%= @monster.distance_2 %>, <%= @monster.attack_2 %> to hit, <%= @monster.target_2 %>.<br />
+            <em>On Hit:</em> <%= @monster.damage_2 %> damage.
           </td>
         </tr>
       <% end %>
@@ -145,7 +163,16 @@
       <% if @monster.weapon_3? %>
         <tr>
           <td colspan="2">
-            <strong><%= @monster.weapon_3 %>:</strong> <%= @monster.attack_3 %> to hit, <%= @monster.damage_3 %> damage.
+            <strong><%= @monster.weapon_3 %>:</strong>
+            <em>
+              <% if @monster.range_3 == true %>
+                Ranged Attack,
+              <% else %>
+                Melee Attack,
+              <% end %>
+            </em>
+            <%= @monster.distance_3 %>, <%= @monster.attack_3 %> to hit, <%= @monster.target_3 %>.<br />
+            <em>On Hit:</em> <%= @monster.damage_3 %> damage.
           </td>
         </tr>
       <% end %>
@@ -153,7 +180,16 @@
       <% if @monster.weapon_4? %>
         <tr>
           <td colspan="2">
-            <strong><%= @monster.weapon_4 %>:</strong> <%= @monster.attack_4 %> to hit, <%= @monster.damage_4 %> damage.
+            <strong><%= @monster.weapon_4 %>:</strong>
+            <em>
+              <% if @monster.range_4 == true %>
+                Ranged Attack,
+              <% else %>
+                Melee Attack,
+              <% end %>
+            </em>
+            <%= @monster.distance_4 %>, <%= @monster.attack_4 %> to hit, <%= @monster.target_4 %>.<br />
+            <em>On Hit:</em> <%= @monster.damage_4 %> damage.
           </td>
         </tr>
       <% end %>
@@ -161,7 +197,16 @@
       <% if @monster.weapon_5? %>
         <tr>
           <td colspan="2">
-            <strong><%= @monster.weapon_5 %>:</strong> <%= @monster.attack_5 %> to hit, <%= @monster.damage_5 %> damage.
+            <strong><%= @monster.weapon_5 %>:</strong>
+            <em>
+              <% if @monster.range_5 == true %>
+                Ranged Attack,
+              <% else %>
+                Melee Attack,
+              <% end %>
+            </em>
+            <%= @monster.distance_5 %>, <%= @monster.attack_5 %> to hit, <%= @monster.target_5 %>.<br />
+            <em>On Hit:</em> <%= @monster.damage_5 %> damage.
           </td>
         </tr>
       <% end %>

@@ -46,7 +46,12 @@ class MonstersController < ApplicationController
       :smelling, :tracking, :strength, :climbing, :driving, :intimidation, :jumping, :might, :smithing, :willpower,
       :courage, :faith, :morale, :self_discipline, :speed, :health, :defense, :armor, :s_ability_confirmation,
       :spellpower, :mana, :weapon_1, :weapon_2, :weapon_3, :weapon_4, :weapon_5, :attack_1, :attack_2, :attack_3,
-      :attack_4, :attack_5, :damage_1, :damage_2, :damage_3, :damage_4, :damage_5)
+      :attack_4, :attack_5, :damage_1, :damage_2, :damage_3, :damage_4, :damage_5, :accuracy_other_check, :accuracy_other,
+      :communication_other_check, :communication_other, :constitution_other_check, :constitution_other,
+      :dexterity_other_check, :dexterity_other, :fighting_other_check, :fighting_other, :intelligence_other_check,
+      :intelligence_other, :perception_other_check, :perception_other, :strength_other_check, :strength_other,
+      :willpower_other_check, :willpower_other, :range_1, :range_2, :range_3, :range_4, :range_5, :target_1, :target_2,
+      :target_3, :target_4, :target_5, :distance_1, :distance_2, :distance_3, :distance_4, :distance_5)
   end
   
   def acc_check
@@ -59,6 +64,7 @@ class MonstersController < ApplicationController
     acc_true << "Grenades" if @monster.grenades == true
     acc_true << "Light Blades" if @monster.light_blades == true
     acc_true << "Staves" if @monster.staves == true
+    acc_true << @monster.accuracy_other if @monster.accuracy_other_check == true
     
     @acc_true_list = acc_true.join(", ")
     @acc_total = acc_true.count
@@ -77,6 +83,7 @@ class MonstersController < ApplicationController
     com_true << "Performance" if @monster.performance == true
     com_true << "Persuasion" if @monster.persuasion == true
     com_true << "Seduction" if @monster.seduction == true
+    com_true << @monster.communication_other if @monster.communication_other_check == true
     
     @com_true_list = com_true.join(", ")
     @com_total = com_true.count
@@ -89,6 +96,7 @@ class MonstersController < ApplicationController
     con_true << "Running" if @monster.running == true
     con_true << "Stamina" if @monster.stamina == true
     con_true << "Swimming" if @monster.swimming == true
+    con_true << @monster.constitution_other if @monster.constitution_other_check == true
     
     @con_true_list = con_true.join(", ")
     @con_total = con_true.count
@@ -107,6 +115,7 @@ class MonstersController < ApplicationController
     dex_true << "Sailing" if @monster.sailing == true
     dex_true << "Stealth" if @monster.stealth == true
     dex_true << "Traps" if @monster.traps == true
+    dex_true << @monster.dexterity_other if @monster.dexterity_other_check == true
     
     @dex_true_list = dex_true.join(", ")
     @dex_total = dex_true.count
@@ -120,6 +129,7 @@ class MonstersController < ApplicationController
     fig_true << "Lances" if @monster.lances == true
     fig_true << "Polearms" if @monster.polearms == true
     fig_true << "Spears" if @monster.spears == true
+    fig_true << @monster.fighting_other if @monster.fighting_other_check == true
     
     @fig_true_list = fig_true.join(", ")
     @fig_total = fig_true.count
@@ -144,6 +154,7 @@ class MonstersController < ApplicationController
     int_true << "Religious Lore" if @monster.religious_lore == true
     int_true << "Research" if @monster.research == true
     int_true << "Writing" if @monster.writing == true
+    int_true << @monster.intelligence_other if @monster.intelligence_other_check == true
     
     @int_true_list = int_true.join(", ")
     @int_total = int_true.count
@@ -157,6 +168,7 @@ class MonstersController < ApplicationController
     per_true << "Seeing" if @monster.seeing == true
     per_true << "Smelling" if @monster.smelling == true
     per_true << "Tracking" if @monster.tracking == true
+    per_true << @monster.perception_other if @monster.perception_other_check == true
     
     @per_true_list = per_true.join(", ")
     @per_total = per_true.count
@@ -170,6 +182,7 @@ class MonstersController < ApplicationController
     str_true << "Jumping" if @monster.jumping == true
     str_true << "Might" if @monster.might == true
     str_true << "Smithing" if @monster.smithing == true
+    str_true << @monster.strength_other if @monster.strength_other_check == true
     
     @str_true_list = str_true.join(", ")
     @str_total = str_true.count
@@ -181,6 +194,7 @@ class MonstersController < ApplicationController
     wil_true << "Faith" if @monster.faith == true
     wil_true << "Morale" if @monster.morale == true
     wil_true << "Self-Discipline" if @monster.self_discipline == true
+    wil_true << @monster.willpower_other if @monster.willpower_other_check == true
     
     @wil_true_list = wil_true.join(", ")
     @wil_total = wil_true.count
