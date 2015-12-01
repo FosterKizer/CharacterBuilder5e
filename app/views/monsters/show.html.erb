@@ -12,6 +12,32 @@
       </tr>
       
       <tr class="warning text-center">
+        <td colspan="2"><strong>Combat Ratings</strong></td>
+      </tr>
+      
+      <tr>
+        <td colspan="2" class="text-center">
+          Speed: <%= @monster.speed %>&nbsp;&nbsp;&nbsp;
+          Health: <%= @monster.health %>&nbsp;&nbsp;&nbsp;
+          Defense: <%= @monster.defense %>&nbsp;&nbsp;&nbsp;
+          Armor: <%= @monster.armor %>
+        </td>
+      </tr>
+      
+      <% if @monster.s_ability_confirmation == true %>
+        <tr class="warning text-center">
+          <td colspan="2"><strong>Spellcasting</strong></td>
+        </tr>
+      
+        <tr>
+          <td colspan="2" class="text-center">
+            Spellpower: <%= @monster.spellpower %>&nbsp;&nbsp;&nbsp;
+            Mana: <%= @monster.mana %>
+          </td>
+        </tr>
+      <% end %>
+      
+      <tr class="warning text-center">
         <td colspan="2"><strong>Abilities (Focuses)</strong></td>
       </tr>
       

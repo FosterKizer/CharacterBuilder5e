@@ -10,6 +10,37 @@
   </tr>
   
   <tr class="warning text-center">
+    <td colspan="2"><strong>Combat Ratings</strong></td>
+  </tr>
+  
+  <tr class="text-center">
+    <td colspan="2">
+      <%= f.label :speed %>&nbsp;&nbsp;<%= f.text_field :speed, class: 'from-inline', 
+        placeholder: "?", size: 4 %>&nbsp;&nbsp;&nbsp;
+      <%= f.label :health %>&nbsp;&nbsp;<%= f.text_field :health, class: 'form-inline', 
+        placeholder: "?", size: 4 %>&nbsp;&nbsp;&nbsp;
+      <%= f.label :defense %>&nbsp;&nbsp;<%= f.text_field :defense, class: 'form-inline', 
+        placeholder: "?", size: 4 %>&nbsp;&nbsp;&nbsp;
+      <%= f.label :armor %>&nbsp;&nbsp;<%= f.text_field :armor, class: 'form-inline', 
+        placeholder: "?", size: 4 %>
+    </td>
+  </tr>
+  
+  <tr class="warning text-center">
+    <td colspan="2"><strong>Spellcasting Ability</strong></td>
+  </tr>
+  
+  <tr class="text-center">
+    <td colspan="2">
+      <%= f.label :s_ability_confirmation, "Spellcaster?" %>&nbsp;<%= f.check_box :s_ability_confirmation %>&nbsp;&nbsp;
+      <%= f.label :spellpower %>&nbsp;&nbsp;<%= f.text_field :spellpower, class: 'form-inline',
+        placeholder: "?", size: 4 %>&nbsp;&nbsp;&nbsp;
+      <%= f.label :mana %>&nbsp;&nbsp;<%= f.text_field :mana, class: 'form-inline',
+        placeholder: "?", size: 4 %>
+    </td>
+  </tr>
+  
+  <tr class="warning text-center">
     <td><strong>Ability</strong></td>
     <td><strong>Focuses</strong></td>
   </tr>

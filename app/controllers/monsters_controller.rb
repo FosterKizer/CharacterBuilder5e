@@ -42,7 +42,8 @@ class MonstersController < ApplicationController
       :engineering, :evaluation, :healing, :heraldry, :historical_lore, :military_lore, :musical_lore, :natural_lore,
       :navigation, :religious_lore, :research, :writing, :perception, :empathy, :hearing, :searching, :seeing,
       :smelling, :tracking, :strength, :climbing, :driving, :intimidation, :jumping, :might, :smithing, :willpower,
-      :courage, :faith, :morale, :self_discipline)
+      :courage, :faith, :morale, :self_discipline, :speed, :health, :defense, :armor, :s_ability_confirmation,
+      :spellpower, :mana)
   end
   
   def acc_check
