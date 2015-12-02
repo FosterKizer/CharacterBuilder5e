@@ -18,6 +18,7 @@ class MonstersController < ApplicationController
     @ability_options = ["-5","-4","-3","-2","-1","0","1","2","3","4","5","6","7","8","9","10"]
     @attack_options = ["-5","-4","-3","-2","-1","0","+1","+2","+3","+4","+5","+6","+7","+8","+9","+10","+11","+12",
       "+13","+14","+15","+16","+17","+18","+19","+20"]
+    @reload_options = ["No Reload","Free Action","Minor Action","Major Action"]
   end
   
   def create
@@ -51,7 +52,8 @@ class MonstersController < ApplicationController
       :dexterity_other_check, :dexterity_other, :fighting_other_check, :fighting_other, :intelligence_other_check,
       :intelligence_other, :perception_other_check, :perception_other, :strength_other_check, :strength_other,
       :willpower_other_check, :willpower_other, :range_1, :range_2, :range_3, :range_4, :range_5, :target_1, :target_2,
-      :target_3, :target_4, :target_5, :distance_1, :distance_2, :distance_3, :distance_4, :distance_5)
+      :target_3, :target_4, :target_5, :distance_1, :distance_2, :distance_3, :distance_4, :distance_5, :reload_1,
+      :reload_2, :reload_3, :reload_4, :reload_5)
   end
   
   def acc_check
@@ -111,7 +113,6 @@ class MonstersController < ApplicationController
     dex_true << "Legerdemain" if @monster.legerdemain == true
     dex_true << "Lock Picking" if @monster.lock_picking == true
     dex_true << "Riding" if @monster.riding == true
-    dex_true << "Piloting" if @monster.piloting == true
     dex_true << "Sailing" if @monster.sailing == true
     dex_true << "Stealth" if @monster.stealth == true
     dex_true << "Traps" if @monster.traps == true

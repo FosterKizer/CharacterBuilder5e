@@ -132,7 +132,7 @@
             <strong><%= @monster.weapon_1 %>:</strong> 
             <em>
               <% if @monster.range_1 == true %>
-                Ranged Attack,
+                Ranged Attack (<%= @monster.reload_1 %>),
               <% else %>
                 Melee Attack,
               <% end %>
@@ -149,7 +149,7 @@
             <strong><%= @monster.weapon_2 %>:</strong>
             <em>
               <% if @monster.range_2 == true %>
-                Ranged Attack,
+                Ranged Attack (<%= @monster.reload_2 %>),
               <% else %>
                 Melee Attack,
               <% end %>
@@ -166,7 +166,7 @@
             <strong><%= @monster.weapon_3 %>:</strong>
             <em>
               <% if @monster.range_3 == true %>
-                Ranged Attack,
+                Ranged Attack (<%= @monster.reload_3 %>),
               <% else %>
                 Melee Attack,
               <% end %>
@@ -183,7 +183,7 @@
             <strong><%= @monster.weapon_4 %>:</strong>
             <em>
               <% if @monster.range_4 == true %>
-                Ranged Attack,
+                Ranged Attack (<%= @monster.reload_4 %>),
               <% else %>
                 Melee Attack,
               <% end %>
@@ -200,7 +200,7 @@
             <strong><%= @monster.weapon_5 %>:</strong>
             <em>
               <% if @monster.range_5 == true %>
-                Ranged Attack,
+                Ranged Attack (<%= @monster.reload_5 %>),
               <% else %>
                 Melee Attack,
               <% end %>

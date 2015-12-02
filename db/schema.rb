@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151201232024) do
+ActiveRecord::Schema.define(version: 20151202003904) do
 
   create_table "monsters", force: :cascade do |t|
     t.string   "name"
@@ -156,6 +156,11 @@ ActiveRecord::Schema.define(version: 20151201232024) do
     t.string   "target_3"
     t.string   "target_4"
     t.string   "target_5"
+    t.string   "reload_1"
+    t.string   "reload_2"
+    t.string   "reload_3"
+    t.string   "reload_4"
+    t.string   "reload_5"
   end
 
   create_table "users", force: :cascade do |t|

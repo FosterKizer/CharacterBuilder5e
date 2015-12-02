@@ -123,7 +123,6 @@
         <%= f.check_box :legerdemain %>&nbsp;<%= f.label :legerdemain, "Legerdemain" %><br />
         <%= f.check_box :lock_picking %>&nbsp;<%= f.label :lock_picking, "Lock Picking" %><br />
         <%= f.check_box :riding %>&nbsp;<%= f.label :riding, "Riding" %><br />
-        <%= f.check_box :piloting %>&nbsp;<%= f.label :piloting, "Piloting" %><br />
         <%= f.check_box :sailing %>&nbsp;<%= f.label :sailing, "Sailing" %><br />
         <%= f.check_box :stealth %>&nbsp;<%= f.label :stealth, "Stealth" %><br />
         <%= f.check_box :traps %>&nbsp;<%= f.label :traps, "Traps" %><br />
@@ -239,8 +238,9 @@
   <tr>
     <td class="text-center">
       <%= f.label :weapon_1, "Weapon" %><br />
-      <%= f.text_field :weapon_1, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br /><br />
-      <%= f.label :range_1, "Ranged?" %>&nbsp;<%= f.check_box :range_1 %>
+      <%= f.text_field :weapon_1, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br />
+      <%= f.label :range_1, "Ranged?" %>&nbsp;<%= f.check_box :range_1 %><br />
+      <%= f.label :reload_1, "Reload:" %>&nbsp;<%= f.select :reload_1, @reload_options, include_blank:false %>
     </td>
       
     <td class="text-center">
@@ -261,8 +261,9 @@
   <tr>
     <td class="text-center">
       <%= f.label :weapon_2, "Weapon" %><br />
-      <%= f.text_field :weapon_2, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br /><br />
-      <%= f.label :range_2, "Ranged?" %>&nbsp;<%= f.check_box :range_2 %>
+      <%= f.text_field :weapon_2, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br />
+      <%= f.label :range_2, "Ranged?" %>&nbsp;<%= f.check_box :range_2 %><br />
+      <%= f.label :reload_2, "Reload:" %>&nbsp;<%= f.select :reload_2, @reload_options, include_blank:false %>
     </td>
       
     <td class="text-center">
@@ -283,8 +284,9 @@
   <tr>
     <td class="text-center">
       <%= f.label :weapon_3, "Weapon" %><br />
-      <%= f.text_field :weapon_3, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br /><br />
-      <%= f.label :range_3, "Ranged?" %>&nbsp;<%= f.check_box :range_3 %>
+      <%= f.text_field :weapon_3, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br />
+      <%= f.label :range_3, "Ranged?" %>&nbsp;<%= f.check_box :range_3 %><br />
+      <%= f.label :reload_3, "Reload:" %>&nbsp;<%= f.select :reload_3, @reload_options, include_blank:false %>
     </td>
       
     <td class="text-center">
@@ -305,8 +307,9 @@
   <tr>
     <td class="text-center">
       <%= f.label :weapon_4, "Weapon" %><br />
-      <%= f.text_field :weapon_4, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br /><br />
-      <%= f.label :range_4, "Ranged?" %>&nbsp;<%= f.check_box :range_4 %>
+      <%= f.text_field :weapon_4, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br />
+      <%= f.label :range_4, "Ranged?" %>&nbsp;<%= f.check_box :range_4 %><br />
+      <%= f.label :reload_4, "Reload:" %>&nbsp;<%= f.select :reload_4, @reload_options, include_blank:false %>
     </td>
       
     <td class="text-center">
@@ -327,8 +330,9 @@
   <tr>
     <td class="text-center">
       <%= f.label :weapon_5, "Weapon" %><br />
-      <%= f.text_field :weapon_5, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br /><br />
-      <%= f.label :range_5, "Ranged?" %>&nbsp;<%= f.check_box :range_5 %>
+      <%= f.text_field :weapon_5, class: 'form-inline', placeholder: "Leave clear if none" %><br /><br />
+      <%= f.label :range_5, "Ranged?" %>&nbsp;<%= f.check_box :range_5 %><br />
+      <%= f.label :reload_5, "Reload:" %>&nbsp;<%= f.select :reload_5, @reload_options, include_blank:false %>
     </td>
       
     <td class="text-center">
